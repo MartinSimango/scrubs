@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interaval: 30s # Set the interval to 30 seconds
-  path: "./namespaces"
+  path: "./k8s/namespaces"
   prune: true
   sourceRef:
     kind: GitRepository
