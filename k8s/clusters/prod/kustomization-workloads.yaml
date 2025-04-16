@@ -1,0 +1,15 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1 
+kind: Kustomization
+metadata:
+  name: workloads
+  namespace: flux-system
+spec:
+  interval: 30s # Set the interval to 30 seconds
+  path: "./k8s/workloads"
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  dependsOn:
+    - name: namespaces
+  wait: true
