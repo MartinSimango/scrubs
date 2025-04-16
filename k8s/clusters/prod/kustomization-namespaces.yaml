@@ -4,7 +4,7 @@ metadata:
   name: namespaces
   namespace: flux-system
 spec:
-  interaval: 30s # Set the interval to 30 seconds
+  interval: 30s # Set the interval to 30 seconds
   path: "./k8s/namespaces"
   prune: true
   sourceRef:
