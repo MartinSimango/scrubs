@@ -1,4 +1,4 @@
-namespace: deva
+namespace: dev
 resources:
   - ../../base/
   - ./namespaces.yaml

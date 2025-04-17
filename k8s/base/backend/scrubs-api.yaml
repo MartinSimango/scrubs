@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx2
+  name: scrubs-api
 spec:
   containers:
-    - name: nginx
-      image: nginx:latest
+    - name: scrubs-api
+      image: martinsimango/scrubs-api:v0.1.0
       ports:
         - containerPort: 80
           name: http
