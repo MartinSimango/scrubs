@@ -1,4 +1,5 @@
 namespace: prod
 resources:
   - ../../base/
+  - ./namespaces.yaml
 
