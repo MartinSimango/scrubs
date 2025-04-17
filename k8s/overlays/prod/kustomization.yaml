@@ -1,5 +1,4 @@
-namespace: prod
 resources:
-  - ../../base/
-  - ./namespaces.yaml
-
+  - ./namespace.yaml
+  -  ../../sealed-secrets
+  - ./base/

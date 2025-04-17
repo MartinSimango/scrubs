@@ -1,4 +1,2 @@
 resources:
-  - ./backend/scrubs-api.yaml
-  - ./sealed-secrets/helm-repository.yaml
-  - ./sealed-secrets/helm-release.yaml
+  - ./backend/

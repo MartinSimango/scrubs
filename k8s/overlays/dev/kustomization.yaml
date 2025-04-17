@@ -1,4 +1,8 @@
-namespace: dev
+resources:
+  - ./namespace.yaml
+  # - ../../sealed-secrets/helm.yaml
+---
+namespace: prod
 resources:
   - ../../base/
-  - ./namespaces.yaml
+
