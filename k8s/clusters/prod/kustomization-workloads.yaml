@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 30s # Set the interval to 30 seconds
-  path: "./k8s/workloads"
+  path: "./k8s/overlays/prod"
   prune: true
   sourceRef:
     kind: GitRepository

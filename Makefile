@@ -20,3 +20,6 @@ k8s-flux-bootstrap:
   	--branch=main \
   	--path=k8s/clusters/prod \
   	--personal
+
+apply-dev:
+	kubectl apply -k k8s/overlays/dev/
