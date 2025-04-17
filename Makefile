@@ -18,7 +18,7 @@ k8s-flux-bootstrap:
   	--owner=MartinSimango \
   	--repository=scrubs \
   	--branch=main \
-  	--path=k8s \
+  	--path=k8s/overlays/prod \
   	--personal
 
 apply-dev:
