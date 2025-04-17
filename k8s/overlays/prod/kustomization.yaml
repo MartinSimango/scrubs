@@ -1,5 +1,5 @@
 resources:
   - ./namespace.yaml
-  - ../../sealed-secrets/
+  # - ../../sealed-secrets/
   - ./base/
 
