@@ -1,0 +1,6 @@
+resources:
+  - ./controllers
+  - ./cluster-issuer.yaml
+  - ./oidc-cluster-role.yaml
+  - ./cronjobs
+  - ./k8s-ingress.yaml

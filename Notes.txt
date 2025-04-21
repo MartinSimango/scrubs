@@ -1,0 +1,12 @@
+OIDC:
+To enable oidc change the api server to use the following flags
+    - --service-account-issuer=https://k8s.api.shukomango.co.in
+    - --service-account-issuer=https://kubernetes.default.svc.cluster.local # yes duplicated by necessary for other tokens to be valid if cluster is already running
+    - --service-account-jwks-uri=https://k8s.api.shukomango.co.in/openid/v1/jwks
+
+
+METRIC SERVER:
+For the metric server to work you need to modify the kubelet config (/var/lib/kubelet/config.yaml)
+set serverTLSBootstrap: true
+Restart the kubelet and then approve the CSR created 
+ 

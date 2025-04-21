@@ -1,12 +1,31 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
+  labels:
+    app: scrubs-api
   name: scrubs-api
 spec:
-  containers:
-    - name: scrubs-api
-      image: martinsimango/scrubs-api:v0.1.0
-      ports:
-        - containerPort: 80
-          name: http
+  replicas: 3
+  selector:
+    matchLabels:
+      app: scrubs-api
+  strategy: 
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: scrubs-api
+    spec:
+      containers:
+      - image: martinsimango/scrubs-api:v0.1.0
+        name: scrubs-api
+      imagePullSecrets:
+        - name: docker-credentials
+
+
+
 
