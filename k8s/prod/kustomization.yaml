@@ -1,6 +1,7 @@
 resources:
+  - ./flux-sync.yaml
   - ./namespace.yaml
-  - ../../controllers/
-  - ./base/
   - ./sealed-docker-credentials.yaml
+  - ../base/
+  - ./ingress.yaml
 

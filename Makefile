@@ -13,7 +13,7 @@ docker-build-api:
 
 ### KUBERNETES ###
 
-k8s-flux-bootstrap-system:
+k8s-flux-bootstrap:
 	flux bootstrap github \
  		--token-auth \
   	--owner=MartinSimango \
@@ -22,16 +22,8 @@ k8s-flux-bootstrap-system:
   	--path=k8s/system \
   	--personal
 
-k8s-flux-bootstrap-prod:
-	flux bootstrap github \
- 		--token-auth \
-  	--owner=MartinSimango \
-  	--repository=scrubs \
-  	--branch=main \
-  	--path=k8s/prod \
-  	--personal
-
-
+k8s-apply-prod:
+	kubectl apply -k k8s/prod/
 
 k8s-apply-dev:
 	kubectl apply -k k8s/dev/

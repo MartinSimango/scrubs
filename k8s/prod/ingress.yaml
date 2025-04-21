@@ -4,15 +4,15 @@ metadata:
   name: scrubs-api-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    cert-manager.io/issuer: "letsencrypt"
+    cert-manager.io/cluster-issuer: "letsencrypt"
 spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - dev.api.shukomango.co.in
+        - api.shukomango.co.in
       secretName: scrubs-api-tls-secret 
   rules:
-    - host: dev.api.shukomango.co.in
+    - host: api.shukomango.co.in
       http:
         paths:
           - path: /

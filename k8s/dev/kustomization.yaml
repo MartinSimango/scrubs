@@ -1,5 +1,6 @@
 resources:
   - ./namespace.yaml
-  - ../../base
   - ./sealed-docker-credentials.yaml
+  - ../base
+  - ./ingress.yaml
 

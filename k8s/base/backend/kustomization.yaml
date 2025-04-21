@@ -1,4 +1,3 @@
 resources:
   - ./scrubs-api.yaml
   - ./scrubs-api-service.yaml
-  - ./ingress.yaml
