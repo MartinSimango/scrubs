@@ -1,5 +1,5 @@
 resources:
   - ./sealed-secrets.yaml
-  # - ./ingress-controller.yaml
-  # - ./metallb.yaml
-  # - ./cert-manager.yaml
+  - ./ingress-controller.yaml
+  - ./metallb.yaml
+  - ./cert-manager.yaml
