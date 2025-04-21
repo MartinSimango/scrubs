@@ -7,6 +7,7 @@ metadata:
     cert-manager.io/cluster-issuer: "letsencrypt"
     nginx.ingress.kubernetes.io/secure-backends: "true"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+  namespace: default
 spec:
   ingressClassName: nginx
   tls:
