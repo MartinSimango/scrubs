@@ -11,10 +11,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - api.k8s.shukomango.co.in
+        - k8s.api.shukomango.co.in
       secretName: k8s-tls-secret 
   rules:
-    - host: api.k8s.shukomango.co.in
+    - host: k8s.api.shukomango.co.in
       http:
         paths:
           - path: /
