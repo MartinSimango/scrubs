@@ -1,4 +1,4 @@
-ENV=prod
+ENV=dev
 TF_BUCKET="scrubs-terraform-state-bucket"
 TF_STATE_KEY="${ENV}.scrubs.terraform.tfstate"
 REGION="eu-west-1"

@@ -3,3 +3,4 @@ resources:
   - ./ingress-controller.yaml
   - ./metallb.yaml
   - ./cert-manager.yaml
+  - ./flux-sync.yaml

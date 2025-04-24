@@ -4,8 +4,8 @@ module "dns" {
   env    = var.env
 }
 
-module "k8s-oidc" {
-  count = var.env == "prod" ? 0 : 1
-  source = "./localmodules/k8s-oidc"
+module "iam" {
+  count               = var.env == "prod" ? 0 : 1
+  source              = "./localmodules/iam"
   k8s_api_domain_name = module.dns.k8s_api_domain_name
 }

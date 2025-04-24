@@ -1,0 +1,3 @@
+resources:
+  - ./aws-creds.yaml
+  - ./update-domains.yaml

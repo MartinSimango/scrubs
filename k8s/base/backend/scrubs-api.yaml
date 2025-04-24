@@ -5,7 +5,7 @@ metadata:
     app: scrubs-api
   name: scrubs-api
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: scrubs-api

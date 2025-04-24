@@ -1,3 +1,4 @@
+namespace: dev
 resources:
   - ./namespace.yaml
   - ./sealed-docker-credentials.yaml

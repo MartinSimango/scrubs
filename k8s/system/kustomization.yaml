@@ -3,4 +3,4 @@ resources:
   - ./cluster-issuer.yaml
   - ./oidc-cluster-role.yaml
   - ./k8s-ingress.yaml
-  # - ./cronjobs
+  - ./cronjobs
