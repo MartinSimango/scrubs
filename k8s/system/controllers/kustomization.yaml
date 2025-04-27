@@ -1,6 +1,6 @@
 resources:
   - ./sealed-secrets.yaml
-  - ./ingress-controller.yaml
   - ./metallb.yaml
+  - ./ingress-controller.yaml
   - ./cert-manager.yaml
   - ./flux-sync.yaml

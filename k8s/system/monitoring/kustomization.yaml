@@ -1,0 +1,4 @@
+resources:
+- grafana-creds.yaml
+- grafana.yaml
+
