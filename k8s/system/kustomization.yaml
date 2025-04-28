@@ -1,6 +1,7 @@
 resources:
-  - ./controllers
-  - ./cluster-issuer.yaml
-  - ./oidc-cluster-role.yaml
-  - ./k8s-ingress.yaml
-  - ./cronjobs
+  - flux-system
+  - controllers
+  - cluster-issuer.yaml
+  - oidc-cluster-role.yaml
+  - k8s-ingress.yaml
+  - cronjobs
